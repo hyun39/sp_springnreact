@@ -9,3 +9,6 @@ curl -d '{"name": "John Doe", "email": "john.doe@baeldgung.com"}' \
 -X POST http://localhost:8080/clients 
 
 </code></pre>
+
+# client 환경 생성
+npx create-react-app frontend
