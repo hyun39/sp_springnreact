@@ -89,3 +89,8 @@ src/App.js
 
 Search for the keywords to learn more about each error.
 </code></pre>
+
+
+Creating a ClientEdit Component #7  
+
+여기까지 했을때  화면에 아무것도 나오지 않는다.

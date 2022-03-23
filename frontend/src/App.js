@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { Button, ButtonGroup, Container, Table } from 'reactstrap';
 
 
-import AppNavbar from './AppNavBar';
+import AppNavbar from './AppNavbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
