@@ -12,3 +12,5 @@ curl -d '{"name": "John Doe", "email": "john.doe@baeldgung.com"}' \
 
 # client 환경 생성
 npx create-react-app frontend
+
+npm install --save bootstrap@5.1 react-cookie@4.1.1 react-router-dom@5.3.0 reactstrap@8.10.0
