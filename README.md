@@ -67,3 +67,25 @@ ERROR
 src/App.js
   Line 81:7:  Parsing error: Unexpected token (81:7)
 </code></pre>
+
+중괄호 하나를 빠져먹었다. 다른 에러메시지
+
+<pre><code>
+Compiled with problems:X
+
+ERROR
+
+
+src/App.js
+  Line 48:16:  'ButtonGroup' is not defined  react/jsx-no-undef
+  Line 49:20:  'Button' is not defined       react/jsx-no-undef
+  Line 49:58:  'Link' is not defined         no-undef
+  Line 50:20:  'Button' is not defined       react/jsx-no-undef
+  Line 58:12:  'AppNavbar' is not defined    react/jsx-no-undef
+  Line 59:12:  'Container' is not defined    react/jsx-no-undef
+  Line 61:20:  'Button' is not defined       react/jsx-no-undef
+  Line 61:48:  'Link' is not defined         no-undef
+  Line 64:16:  'Table' is not defined        react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+</code></pre>
