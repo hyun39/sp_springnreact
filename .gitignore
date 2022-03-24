@@ -1,2 +1,15 @@
 target/*
 .project
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.apt.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+frontend/node/node
+frontend/node/yarn/dist/LICENSE
+frontend/node/yarn/dist/README.md
+frontend/node/yarn/dist/bin/yarn
+frontend/node/yarn/dist/bin/yarn.cmd
+frontend/node/yarn/dist/bin/yarn.js
+frontend/node/yarn/dist/bin/yarnpkg
+frontend/node/yarn/dist/bin/yarnpkg.cmd
+frontend/node/yarn/dist/lib/cli.js
+frontend/node/yarn/dist/lib/v8-compile-cache.js
