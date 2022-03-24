@@ -99,4 +99,36 @@ Creating a ClientEdit Component #7
 여기까지 했을때  화면에 아무것도 나오지 않는다.
 
 
+<pre><code>
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.177 s
+[INFO] Finished at: 2022-03-24T09:53:04+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.6:install-node-and-yarn (install node) on project demo: Could not download Node.js: Could not download https://nodejs.org/dist/v14.8.0/node-v14.8.0-darwin-x64.tar.gz: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+</code></pre>
 
+
+maven  node install 할때 아래의 에러메시지 발생
+
+<pre><code>
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+</code></pre>
+
+https://sailing-ship.tistory.com/5891
+
+https://confluence.atlassian.com/kb/unable-to-connect-to-ssl-services-due-to-pkix-path-building-failed-error-779355358.html
+
+회사망에서 밖으로 나가서 그런거다. 테더링을 해서 하면 에러가 발생을 하지 않는다.
+
+jdk 위치확인하기
+mvn -info
+
+bin/keytool -importcert -keystore lib/security/cacerts -storepass changeit -file /Users/hyunminlee/work/_sf/SpringnReact/SK_holdings_CC.cer
