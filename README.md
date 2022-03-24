@@ -4,6 +4,9 @@ https://hellodoor.tistory.com/107
 
 <pre><code>
 
+curl -X GET http://localhost:8080/clients 
+
+
 curl -d '{"name": "John Doe", "email": "john.doe@baeldgung.com"}' \
 -H "Content-Type: application/json" \
 -X POST http://localhost:8080/clients 
@@ -94,3 +97,6 @@ Search for the keywords to learn more about each error.
 Creating a ClientEdit Component #7  
 
 여기까지 했을때  화면에 아무것도 나오지 않는다.
+
+
+
